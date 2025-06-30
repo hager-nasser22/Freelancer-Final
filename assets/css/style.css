@@ -699,13 +699,13 @@
     transform: scale(1.2);
   }
   
-  .footer-links li a , .contacts-footer li a{
+  .footer-links li a , .contacts-footer li a , .contacts-footer li p{
     color: #ccc;
     text-decoration: none;
     transition: all 0.3s ease;
   }
   
-  .footer-links li a:hover ,  .contacts-footer li a:hover{
+  .footer-links li a:hover ,  .contacts-footer li a:hover , .footer-links li p:hover{
     color: #FFE520;
     padding-right: 5px;
     text-shadow: 0 0 5px #FFE520;
