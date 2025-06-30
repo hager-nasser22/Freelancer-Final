@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://americannluggage.netlify.app/sitemap.xml
