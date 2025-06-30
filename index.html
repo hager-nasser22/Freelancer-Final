@@ -12,17 +12,18 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="icon" type="image/x-icon" href="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286047/favicon.ico_lej2ey.png" />
+  <link rel="icon" type="image/x-icon"
+    href="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286047/favicon.ico_lej2ey.png" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
 
   <style>
-.image-real .splide__slide img {
+    .image-real .splide__slide img {
       width: 100%;
       height: 240px;
       border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
     .image-real .splide__arrow {
@@ -31,7 +32,7 @@
       height: 45px;
       border-radius: 50%;
       color: #243B67;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     }
 
     /* .image-real .splide__arrow--prev {
@@ -41,84 +42,86 @@
     .image-real .splide__arrow--next {
       left: -60px;
     } */
-    
+
     /* Responsive layout for sections with text and image/video */
     @media (max-width: 767.98px) {
-        .part-1 .row,
-        .part-2 .row {
-            flex-direction: column-reverse !important;
-            display: flex !important;
-        }
-        
-        .part-1 .col-md-6:first-child,
-        .part-2 .col-md-6:first-child {
-            order: 2 !important;
-        }
-        
-        .part-1 .col-md-5,
-        .part-2 .col-md-5 {
-            order: 1 !important;
-            margin-bottom: 2rem !important;
-        }
-        
-        .part-2 .row .col-md-8:first-child {
-            order: 2 !important;
-        }
-        
-        .part-2 .row .col-md-4 {
-            order: 1 !important;
-            margin-bottom: 2rem !important;
-        }
-        
-        /* .part-1 .content,
+
+      .part-1 .row,
+      .part-2 .row {
+        flex-direction: column-reverse !important;
+        display: flex !important;
+      }
+
+      .part-1 .col-md-6:first-child,
+      .part-2 .col-md-6:first-child {
+        order: 2 !important;
+      }
+
+      .part-1 .col-md-5,
+      .part-2 .col-md-5 {
+        order: 1 !important;
+        margin-bottom: 2rem !important;
+      }
+
+      .part-2 .row .col-md-8:first-child {
+        order: 2 !important;
+      }
+
+      .part-2 .row .col-md-4 {
+        order: 1 !important;
+        margin-bottom: 2rem !important;
+      }
+
+      /* .part-1 .content,
         .part-2 .content {
             text-align: center !important;
         } */
-        
-        .part-1 .video-thumbnail,
-        .part-2 .video-thumbnail {
-            text-align: center !important;
-        }
+
+      .part-1 .video-thumbnail,
+      .part-2 .video-thumbnail {
+        text-align: center !important;
+      }
     }
-    
+
     /* Force override for Bootstrap */
     @media (max-width: 767.98px) {
-        section[class*="part-"] .container .row {
-            flex-direction: column-reverse !important;
-            display: flex !important;
-        }
-        
-        section[class*="part-"] .container .row > div:first-child {
-            order: 2 !important;
-        }
-        
-        section[class*="part-"] .container .row > div:last-child {
-            order: 1 !important;
-            margin-bottom: 2rem !important;
-        }
+      section[class*="part-"] .container .row {
+        flex-direction: column-reverse !important;
+        display: flex !important;
+      }
+
+      section[class*="part-"] .container .row>div:first-child {
+        order: 2 !important;
+      }
+
+      section[class*="part-"] .container .row>div:last-child {
+        order: 1 !important;
+        margin-bottom: 2rem !important;
+      }
     }
-    
+
     /* Additional mobile styles */
     @media (max-width: 767.98px) {
-        .part-1 .row,
-        .part-2 .row {
-            flex-direction: column-reverse !important;
-        }
-        
-        .part-1 .col-md-6:first-child,
-        .part-2 .col-md-6:first-child,
-        .part-2 .col-md-8:first-child {
-            order: 2 !important;
-        }
-        
-        .part-1 .col-md-5,
-        .part-2 .col-md-5,
-        .part-2 .col-md-4 {
-            order: 1 !important;
-            margin-bottom: 2rem !important;
-        }
-        
-        /* .part-1 .content,
+
+      .part-1 .row,
+      .part-2 .row {
+        flex-direction: column-reverse !important;
+      }
+
+      .part-1 .col-md-6:first-child,
+      .part-2 .col-md-6:first-child,
+      .part-2 .col-md-8:first-child {
+        order: 2 !important;
+      }
+
+      .part-1 .col-md-5,
+      .part-2 .col-md-5,
+      .part-2 .col-md-4 {
+        order: 1 !important;
+        margin-bottom: 2rem !important;
+      }
+
+      /* .part-1 .content,
         .part-2 .content {
             text-align: center !important;
         } */
@@ -131,7 +134,8 @@
   <nav class="navbar navbar-expand-lg" style="background-color: #e1de12">
     <div class="container">
       <a class="navbar-brand" href="#heroAutoplaySlider">
-        <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286047/favicon.ico_lej2ey.png" alt="American Luggage Logo" height="50" />
+        <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286047/favicon.ico_lej2ey.png"
+          alt="American Luggage Logo" height="50" />
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -187,11 +191,9 @@
                 color: #f2f2f2;
                 font-family: 'Tajawal', sans-serif;
                 font-weight: 500;
-              "
-              href="#ourProducts"
-              >
+              " href="#ourProducts">
             تسوق الآن!
-        </a>
+          </a>
         </form>
       </div>
     </div>
@@ -215,7 +217,8 @@
               </div>
             </div>
             <div class="col-md-6 order-md-2">
-              <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286064/slider1_evgjuz.png" class="img-fluid" alt="American Luggage Set 1" />
+              <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286064/slider1_evgjuz.png"
+                class="img-fluid" alt="American Luggage Set 1" />
             </div>
           </div>
         </div>
@@ -225,12 +228,15 @@
         <div class="container hero-content-card">
           <div class="row align-items-center g-0">
             <div class="col-md-6 order-md-1">
-              <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286070/slider4_sbvytl.png" class="img-fluid" alt="American Luggage Set 2" />
+              <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286070/slider4_sbvytl.png"
+                class="img-fluid" alt="American Luggage Set 2" />
             </div>
             <div class="col-md-6 order-md-1 p-md-4" dir="ltr">
               <h2 class="mb-3 heading-content">
-                When you are looking for quality,stylish design and competitive price, you will find American Luggage.              </h2>
-              <p class="lead mb-4 heading-paragraph"> we will make your trips the best <br>.Check and choose your favorite design yourself.
+                When you are looking for quality,stylish design and competitive price, you will find American Luggage.
+              </h2>
+              <p class="lead mb-4 heading-paragraph"> we will make your trips the best <br>.Check and choose your
+                favorite design yourself.
               </p>
               <div class="mt-5 order-now">
                 <a href="#" class="btn btn-lg px-4">Shop Now</a>
@@ -255,7 +261,8 @@
               </div>
             </div>
             <div class="col-md-6 order-md-2">
-              <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286070/slider5_deuju7.png" class="img-fluid" alt="American Luggage Set 3" />
+              <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286070/slider5_deuju7.png"
+                class="img-fluid" alt="American Luggage Set 3" />
             </div>
           </div>
         </div>
@@ -277,7 +284,8 @@
               </div>
             </div>
             <div class="col-md-6 order-md-2">
-              <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286069/slider3_lfwmke.png" class="img-fluid" alt="American Luggage Set 4" />
+              <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286069/slider3_lfwmke.png"
+                class="img-fluid" alt="American Luggage Set 4" />
             </div>
           </div>
         </div>
@@ -298,7 +306,8 @@
               </div>
             </div>
             <div class="col-md-6 order-md-2">
-              <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286082/slider2_d7n60a.png" class="img-fluid" alt="American Luggage Set 5" />
+              <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286082/slider2_d7n60a.png"
+                class="img-fluid" alt="American Luggage Set 5" />
             </div>
           </div>
         </div>
@@ -319,7 +328,8 @@
               </div>
             </div>
             <div class="col-md-6 order-md-2">
-              <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286082/slider6_scved9.png" class="img-fluid" alt="American Luggage Set 6" />
+              <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286082/slider6_scved9.png"
+                class="img-fluid" alt="American Luggage Set 6" />
             </div>
           </div>
         </div>
@@ -334,7 +344,8 @@
         <div class="col-md-5 pt-4 order-1 order-md-2">
           <div class="video-thumbnail position-relative" id="videoTrigger" data-bs-toggle="modal"
             data-bs-target="#videoModal">
-            <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286081/video-background_lmiiui.png"
+            <img
+              src="https://res.cloudinary.com/dg6vyez60/image/upload/v1751287768/6aafeca209fc781ec5d0d8c763b9ee848d59c7db_hyjfy5.png"
               alt="صورة الفيديو" class="w-100 rounded" />
             <div class="overlay"></div>
             <div class="play-button">
@@ -345,7 +356,7 @@
             </div>
           </div>
         </div>
-  
+
         <!-- المحتوى النصي -->
         <div class="col-md-6 content order-2 order-md-1" style="text-align: start;">
           <h2 class="mb-4 header-1">لماذا American Luggage؟</h2>
@@ -390,7 +401,7 @@
               <span class="pe-2 icon-content">مقاومة للماء لحماية المحتويات من الرطوبة والسوائل.</span>
             </li>
           </ul>
-  
+
           <div class="mt-5 order-now">
             <a href="https://wa.me/+966550903636" class="btn btn-lg px-4">أطلب الآن</a>
           </div>
@@ -398,7 +409,7 @@
       </div>
     </div>
   </section>
-  
+
 
   <section class="part-2 pt-2" id="aboutUs" style="overflow: hidden;">
     <div class="container">
@@ -407,8 +418,9 @@
         <div class="col-md-5 pt-4 order-1 order-md-2">
           <div class="video-thumbnail position-relative" id="videoTrigger" data-bs-toggle="modal"
             data-bs-target="#videoModal3">
-            <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286060/main_m6nwzy.png" alt="صورة الفيديو"
-              class="w-100 rounded" />
+            <img
+              src="https://res.cloudinary.com/dg6vyez60/image/upload/v1751287766/1f2298933ca00f154ffc8c6693340a8e617bb5cb_iafmdv.png"
+              alt="صورة الفيديو" class="w-100 rounded" />
             <div class="overlay"></div>
             <div class="play-button">
               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" viewBox="0 0 16 16">
@@ -418,7 +430,7 @@
             </div>
           </div>
         </div>
-  
+
         <!-- الكلام -->
         <div class="col-md-6 content order-2 order-md-1 " style="text-align: start;">
           <h2 class="mb-4 header-1">من نحن؟</h2>
@@ -436,7 +448,7 @@
       </div>
     </div>
   </section>
-  
+
 
   <section class="part-3">
     <div class="container products-section-container-one">
@@ -444,8 +456,8 @@
         <!-- Product Card 1 -->
         <div class="col" style="padding: 10px 40px">
           <div class="card product-card">
-            <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286083/part33_pjahah.png" width="100%" height="100%" class="card-img-top"
-              alt="American Luggage blue suitcase with text about limits" />
+            <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286083/part33_pjahah.png" width="100%"
+              height="100%" class="card-img-top" alt="American Luggage blue suitcase with text about limits" />
             <div class="card-body">
               <h5 dir="ltr" class="card-title" style="
                     color: #243b67;
@@ -461,8 +473,8 @@
         <!-- Product Card 2 -->
         <div class="col" style="padding: 10px 40px">
           <div class="card product-card">
-            <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286075/part32_yu4t0e.png" width="100%" height="100%" class="card-img-top"
-              alt="American Luggage blue suitcases in a family set" />
+            <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286075/part32_yu4t0e.png" width="100%"
+              height="100%" class="card-img-top" alt="American Luggage blue suitcases in a family set" />
             <div class="card-body">
               <h5 dir="ltr" class="card-title" style="
                     color: #243b67;
@@ -478,8 +490,8 @@
         <!-- Product Card 3 -->
         <div class="col" style="padding: 10px 40px">
           <div class="card product-card">
-            <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286058/part31_oj62g0.png" width="100%" height="100%" class="card-img-top"
-              alt="American Luggage blue suitcase with text about durability" />
+            <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286058/part31_oj62g0.png" width="100%"
+              height="100%" class="card-img-top" alt="American Luggage blue suitcase with text about durability" />
             <div class="card-body">
               <h5 dir="ltr" class="card-title" style="
                     color: #243b67;
@@ -487,7 +499,7 @@
                     font-size: 24px;
                     font-weight: 500;
                   ">
-                  Light as air
+                Light as air
               </h5>
             </div>
           </div>
@@ -504,16 +516,17 @@
         ">
       مجموعة شنط American Luggage
     </h2>
-    <p class="mb-5 text-center" style="font-size: 25px; color: #404040">
-      اكتشف تشكيلة متنوعة من الشنط العصرية والعملية لكل احتياجات السفر.
-    </p>
+    <p class="mb-5 text-center" style="font-size: 25px; color: #404040 ; padding: 0px 17%;" dir="ltr">
+      Looking for quality, style, and a great price? Discover American Luggage – where your perfect travel begins. </p>
     <div class="row g-3 g-md-4 mt-3 mb-5">
       <!-- شنطة 1 -->
       <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
         <div class="card bag-card h-100" style="border: none; border-radius: 20px">
           <!-- صور الشنطة -->
-          <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750287109/image-50_vgmth9.png" class="bag-image default-img" alt="شنطة" />
-          <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750287111/image-50-hover_f0m5wj.png" class="bag-image hover-img" alt="صورة جانبية" />
+          <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750287109/image-50_vgmth9.png"
+            class="bag-image default-img" alt="شنطة" />
+          <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750287111/image-50-hover_f0m5wj.png"
+            class="bag-image hover-img" alt="صورة جانبية" />
 
           <!-- معلومات الشنطة -->
           <div class="bag-info">
@@ -525,15 +538,18 @@
 
           <!-- ايقونات التواصل -->
           <div class="social-icons">
-            <a href="https://wa.me/+966550903636" target="_blank"><img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286082/whatsapp_edzyj9.png" alt="WhatsApp"
+            <a href="https://wa.me/+966550903636" target="_blank"><img
+                src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286082/whatsapp_edzyj9.png" alt="WhatsApp"
                 style="border: 3px solid #fff; border-radius: 50%" /></a>
-            <a href="https://www.facebook.com/share/1AvuzJ8U7W/" target="_blank"><img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286046/facebook_zzdkby.png"
-                alt="Facebook" style="border: 3px solid #fff; border-radius: 50%" /></a>
+            <a href="https://www.facebook.com/share/1AvuzJ8U7W/" target="_blank"><img
+                src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286046/facebook_zzdkby.png" alt="Facebook"
+                style="border: 3px solid #fff; border-radius: 50%" /></a>
             <a href="https://www.instagram.com/american_luggage_ksa?igsh=MzRlODBiNWFlZA==" target="_blank"><img
                 src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286053/instagram_ie5fdu.png" alt="Instagram"
                 style="border: 3px solid #fff; border-radius: 50%" /></a>
             <a href="https://www.tiktok.com/@american_luggage_ksa?_t=ZS-8x9FjCltjaa&_r=1" target="_blank"><img
-                src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286080/tiktok_fgqb2h.png" alt="TikTok" style="border: 3px solid #fff; border-radius: 50%" /></a>
+                src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286080/tiktok_fgqb2h.png" alt="TikTok"
+                style="border: 3px solid #fff; border-radius: 50%" /></a>
             <a href="https://x.com/americanluggag2?t=8Se5D8Ap-7DX_hIxGdCDjg&s=09" target="_blank"><img
                 src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286082/x-twitter_lc0ur1.png" alt="X" style="
                     border: 3px solid #fff;
@@ -541,7 +557,8 @@
                     background-color: #fff;
                   " /></a>
             <a href="https://www.snapchat.com/add/americanluggag2?share_id=dg3X_Y2jRkQ&locale=ar-EG"
-              target="_blank"><img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286075/snapchat_j5jrap.png" alt="Snapchat"
+              target="_blank"><img
+                src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286075/snapchat_j5jrap.png" alt="Snapchat"
                 style="border: 3px solid #fff; border-radius: 50%" /></a>
           </div>
         </div>
@@ -549,8 +566,10 @@
       <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
         <div class="card bag-card h-100" style="border: none; border-radius: 20px">
           <!-- صور الشنطة -->
-          <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750287117/image-51_p0uviz.png" class="bag-image default-img" alt="شنطة" />
-          <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750287119/image-51-hover_bm1pk3.png" class="bag-image hover-img" alt="صورة جانبية" />
+          <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750287117/image-51_p0uviz.png"
+            class="bag-image default-img" alt="شنطة" />
+          <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750287119/image-51-hover_bm1pk3.png"
+            class="bag-image hover-img" alt="صورة جانبية" />
 
           <!-- معلومات الشنطة -->
           <div class="bag-info">
@@ -562,15 +581,18 @@
 
           <!-- ايقونات التواصل -->
           <div class="social-icons">
-            <a href="https://wa.me/+966550903636" target="_blank"><img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286082/whatsapp_edzyj9.png" alt="WhatsApp"
+            <a href="https://wa.me/+966550903636" target="_blank"><img
+                src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286082/whatsapp_edzyj9.png" alt="WhatsApp"
                 style="border: 3px solid #fff; border-radius: 50%" /></a>
-            <a href="https://www.facebook.com/share/1AvuzJ8U7W/" target="_blank"><img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286046/facebook_zzdkby.png"
-                alt="Facebook" style="border: 3px solid #fff; border-radius: 50%" /></a>
+            <a href="https://www.facebook.com/share/1AvuzJ8U7W/" target="_blank"><img
+                src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286046/facebook_zzdkby.png" alt="Facebook"
+                style="border: 3px solid #fff; border-radius: 50%" /></a>
             <a href="https://www.instagram.com/american_luggage_ksa?igsh=MzRlODBiNWFlZA==" target="_blank"><img
                 src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286053/instagram_ie5fdu.png" alt="Instagram"
                 style="border: 3px solid #fff; border-radius: 50%" /></a>
             <a href="https://www.tiktok.com/@american_luggage_ksa?_t=ZS-8x9FjCltjaa&_r=1" target="_blank"><img
-                src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286080/tiktok_fgqb2h.png" alt="TikTok" style="border: 3px solid #fff; border-radius: 50%" /></a>
+                src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286080/tiktok_fgqb2h.png" alt="TikTok"
+                style="border: 3px solid #fff; border-radius: 50%" /></a>
             <a href="https://x.com/americanluggag2?t=8Se5D8Ap-7DX_hIxGdCDjg&s=09" target="_blank"><img
                 src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286082/x-twitter_lc0ur1.png" alt="X" style="
                     border: 3px solid #fff;
@@ -578,7 +600,8 @@
                     background-color: #fff;
                   " /></a>
             <a href="https://www.snapchat.com/add/americanluggag2?share_id=dg3X_Y2jRkQ&locale=ar-EG"
-              target="_blank"><img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286075/snapchat_j5jrap.png" alt="Snapchat"
+              target="_blank"><img
+                src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286075/snapchat_j5jrap.png" alt="Snapchat"
                 style="border: 3px solid #fff; border-radius: 50%" /></a>
           </div>
         </div>
@@ -586,8 +609,10 @@
       <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
         <div class="card bag-card h-100" style="border: none; border-radius: 20px">
           <!-- صور الشنطة -->
-          <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750287120/image-52_kkuatu.png" class="bag-image default-img" alt="شنطة" />
-          <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750287126/image-52-hover_ruk7ox.png" class="bag-image hover-img" alt="صورة جانبية" />
+          <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750287120/image-52_kkuatu.png"
+            class="bag-image default-img" alt="شنطة" />
+          <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750287126/image-52-hover_ruk7ox.png"
+            class="bag-image hover-img" alt="صورة جانبية" />
 
           <!-- معلومات الشنطة -->
           <div class="bag-info">
@@ -599,15 +624,18 @@
 
           <!-- ايقونات التواصل -->
           <div class="social-icons">
-            <a href="https://wa.me/+966550903636" target="_blank"><img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286082/whatsapp_edzyj9.png" alt="WhatsApp"
+            <a href="https://wa.me/+966550903636" target="_blank"><img
+                src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286082/whatsapp_edzyj9.png" alt="WhatsApp"
                 style="border: 3px solid #fff; border-radius: 50%" /></a>
-            <a href="https://www.facebook.com/share/1AvuzJ8U7W/" target="_blank"><img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286046/facebook_zzdkby.png"
-                alt="Facebook" style="border: 3px solid #fff; border-radius: 50%" /></a>
+            <a href="https://www.facebook.com/share/1AvuzJ8U7W/" target="_blank"><img
+                src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286046/facebook_zzdkby.png" alt="Facebook"
+                style="border: 3px solid #fff; border-radius: 50%" /></a>
             <a href="https://www.instagram.com/american_luggage_ksa?igsh=MzRlODBiNWFlZA==" target="_blank"><img
                 src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286053/instagram_ie5fdu.png" alt="Instagram"
                 style="border: 3px solid #fff; border-radius: 50%" /></a>
             <a href="https://www.tiktok.com/@american_luggage_ksa?_t=ZS-8x9FjCltjaa&_r=1" target="_blank"><img
-                src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286080/tiktok_fgqb2h.png" alt="TikTok" style="border: 3px solid #fff; border-radius: 50%" /></a>
+                src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286080/tiktok_fgqb2h.png" alt="TikTok"
+                style="border: 3px solid #fff; border-radius: 50%" /></a>
             <a href="https://x.com/americanluggag2?t=8Se5D8Ap-7DX_hIxGdCDjg&s=09" target="_blank"><img
                 src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286082/x-twitter_lc0ur1.png" alt="X" style="
                     border: 3px solid #fff;
@@ -615,7 +643,8 @@
                     background-color: #fff;
                   " /></a>
             <a href="https://www.snapchat.com/add/americanluggag2?share_id=dg3X_Y2jRkQ&locale=ar-EG"
-              target="_blank"><img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286075/snapchat_j5jrap.png" alt="Snapchat"
+              target="_blank"><img
+                src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286075/snapchat_j5jrap.png" alt="Snapchat"
                 style="border: 3px solid #fff; border-radius: 50%" /></a>
           </div>
         </div>
@@ -624,8 +653,10 @@
       <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
         <div class="card bag-card h-100" style="border: none; border-radius: 20px">
           <!-- صور الشنطة -->
-          <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750287126/image-53_wuuh4t.png" class="bag-image default-img" alt="شنطة" />
-          <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750287130/image-53-hover_omev2p.png" class="bag-image hover-img" alt="صورة جانبية" />
+          <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750287126/image-53_wuuh4t.png"
+            class="bag-image default-img" alt="شنطة" />
+          <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750287130/image-53-hover_omev2p.png"
+            class="bag-image hover-img" alt="صورة جانبية" />
 
           <!-- معلومات الشنطة -->
           <div class="bag-info">
@@ -637,15 +668,18 @@
 
           <!-- ايقونات التواصل -->
           <div class="social-icons">
-            <a href="https://wa.me/+966550903636" target="_blank"><img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286082/whatsapp_edzyj9.png" alt="WhatsApp"
+            <a href="https://wa.me/+966550903636" target="_blank"><img
+                src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286082/whatsapp_edzyj9.png" alt="WhatsApp"
                 style="border: 3px solid #fff; border-radius: 50%" /></a>
-            <a href="https://www.facebook.com/share/1AvuzJ8U7W/" target="_blank"><img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286046/facebook_zzdkby.png"
-                alt="Facebook" style="border: 3px solid #fff; border-radius: 50%" /></a>
+            <a href="https://www.facebook.com/share/1AvuzJ8U7W/" target="_blank"><img
+                src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286046/facebook_zzdkby.png" alt="Facebook"
+                style="border: 3px solid #fff; border-radius: 50%" /></a>
             <a href="https://www.instagram.com/american_luggage_ksa?igsh=MzRlODBiNWFlZA==" target="_blank"><img
                 src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286053/instagram_ie5fdu.png" alt="Instagram"
                 style="border: 3px solid #fff; border-radius: 50%" /></a>
             <a href="https://www.tiktok.com/@american_luggage_ksa?_t=ZS-8x9FjCltjaa&_r=1" target="_blank"><img
-                src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286080/tiktok_fgqb2h.png" alt="TikTok" style="border: 3px solid #fff; border-radius: 50%" /></a>
+                src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286080/tiktok_fgqb2h.png" alt="TikTok"
+                style="border: 3px solid #fff; border-radius: 50%" /></a>
             <a href="https://x.com/americanluggag2?t=8Se5D8Ap-7DX_hIxGdCDjg&s=09" target="_blank"><img
                 src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286082/x-twitter_lc0ur1.png" alt="X" style="
                     border: 3px solid #fff;
@@ -653,7 +687,8 @@
                     background-color: #fff;
                   " /></a>
             <a href="https://www.snapchat.com/add/americanluggag2?share_id=dg3X_Y2jRkQ&locale=ar-EG"
-              target="_blank"><img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286075/snapchat_j5jrap.png" alt="Snapchat"
+              target="_blank"><img
+                src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286075/snapchat_j5jrap.png" alt="Snapchat"
                 style="border: 3px solid #fff; border-radius: 50%" /></a>
           </div>
         </div>
@@ -663,8 +698,10 @@
       <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
         <div class="card bag-card h-100" style="border: none; border-radius: 20px">
           <!-- صور الشنطة -->
-          <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750287135/image-54_t8wnv9.png" class="bag-image default-img" alt="شنطة" />
-          <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750287137/image-54-hover_gkforb.png" class="bag-image hover-img" alt="صورة جانبية" />
+          <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750287135/image-54_t8wnv9.png"
+            class="bag-image default-img" alt="شنطة" />
+          <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750287137/image-54-hover_gkforb.png"
+            class="bag-image hover-img" alt="صورة جانبية" />
 
           <!-- معلومات الشنطة -->
           <div class="bag-info">
@@ -676,15 +713,18 @@
 
           <!-- ايقونات التواصل -->
           <div class="social-icons">
-            <a href="https://wa.me/+966550903636" target="_blank"><img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286082/whatsapp_edzyj9.png" alt="WhatsApp"
+            <a href="https://wa.me/+966550903636" target="_blank"><img
+                src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286082/whatsapp_edzyj9.png" alt="WhatsApp"
                 style="border: 3px solid #fff; border-radius: 50%" /></a>
-            <a href="https://www.facebook.com/share/1AvuzJ8U7W/" target="_blank"><img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286046/facebook_zzdkby.png"
-                alt="Facebook" style="border: 3px solid #fff; border-radius: 50%" /></a>
+            <a href="https://www.facebook.com/share/1AvuzJ8U7W/" target="_blank"><img
+                src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286046/facebook_zzdkby.png" alt="Facebook"
+                style="border: 3px solid #fff; border-radius: 50%" /></a>
             <a href="https://www.instagram.com/american_luggage_ksa?igsh=MzRlODBiNWFlZA==" target="_blank"><img
                 src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286053/instagram_ie5fdu.png" alt="Instagram"
                 style="border: 3px solid #fff; border-radius: 50%" /></a>
             <a href="https://www.tiktok.com/@american_luggage_ksa?_t=ZS-8x9FjCltjaa&_r=1" target="_blank"><img
-                src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286080/tiktok_fgqb2h.png" alt="TikTok" style="border: 3px solid #fff; border-radius: 50%" /></a>
+                src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286080/tiktok_fgqb2h.png" alt="TikTok"
+                style="border: 3px solid #fff; border-radius: 50%" /></a>
             <a href="https://x.com/americanluggag2?t=8Se5D8Ap-7DX_hIxGdCDjg&s=09" target="_blank"><img
                 src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286082/x-twitter_lc0ur1.png" alt="X" style="
                     border: 3px solid #fff;
@@ -692,7 +732,8 @@
                     background-color: #fff;
                   " /></a>
             <a href="https://www.snapchat.com/add/americanluggag2?share_id=dg3X_Y2jRkQ&locale=ar-EG"
-              target="_blank"><img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286075/snapchat_j5jrap.png" alt="Snapchat"
+              target="_blank"><img
+                src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286075/snapchat_j5jrap.png" alt="Snapchat"
                 style="border: 3px solid #fff; border-radius: 50%" /></a>
           </div>
         </div>
@@ -700,8 +741,10 @@
       <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
         <div class="card bag-card h-100" style="border: none; border-radius: 20px">
           <!-- صور الشنطة -->
-          <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750287154/image-55_vuzofh.png" class="bag-image default-img" alt="شنطة" />
-          <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750287164/image-55-hover_qgjrvy.png" class="bag-image hover-img" alt="صورة جانبية" />
+          <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750287154/image-55_vuzofh.png"
+            class="bag-image default-img" alt="شنطة" />
+          <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750287164/image-55-hover_qgjrvy.png"
+            class="bag-image hover-img" alt="صورة جانبية" />
 
           <!-- معلومات الشنطة -->
           <div class="bag-info">
@@ -713,15 +756,18 @@
 
           <!-- ايقونات التواصل -->
           <div class="social-icons">
-            <a href="https://wa.me/+966550903636" target="_blank"><img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286082/whatsapp_edzyj9.png" alt="WhatsApp"
+            <a href="https://wa.me/+966550903636" target="_blank"><img
+                src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286082/whatsapp_edzyj9.png" alt="WhatsApp"
                 style="border: 3px solid #fff; border-radius: 50%" /></a>
-            <a href="https://www.facebook.com/share/1AvuzJ8U7W/" target="_blank"><img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286046/facebook_zzdkby.png"
-                alt="Facebook" style="border: 3px solid #fff; border-radius: 50%" /></a>
+            <a href="https://www.facebook.com/share/1AvuzJ8U7W/" target="_blank"><img
+                src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286046/facebook_zzdkby.png" alt="Facebook"
+                style="border: 3px solid #fff; border-radius: 50%" /></a>
             <a href="https://www.instagram.com/american_luggage_ksa?igsh=MzRlODBiNWFlZA==" target="_blank"><img
                 src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286053/instagram_ie5fdu.png" alt="Instagram"
                 style="border: 3px solid #fff; border-radius: 50%" /></a>
             <a href="https://www.tiktok.com/@american_luggage_ksa?_t=ZS-8x9FjCltjaa&_r=1" target="_blank"><img
-                src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286080/tiktok_fgqb2h.png" alt="TikTok" style="border: 3px solid #fff; border-radius: 50%" /></a>
+                src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286080/tiktok_fgqb2h.png" alt="TikTok"
+                style="border: 3px solid #fff; border-radius: 50%" /></a>
             <a href="https://x.com/americanluggag2?t=8Se5D8Ap-7DX_hIxGdCDjg&s=09" target="_blank"><img
                 src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286082/x-twitter_lc0ur1.png" alt="X" style="
                     border: 3px solid #fff;
@@ -729,7 +775,8 @@
                     background-color: #fff;
                   " /></a>
             <a href="https://www.snapchat.com/add/americanluggag2?share_id=dg3X_Y2jRkQ&locale=ar-EG"
-              target="_blank"><img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286075/snapchat_j5jrap.png" alt="Snapchat"
+              target="_blank"><img
+                src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286075/snapchat_j5jrap.png" alt="Snapchat"
                 style="border: 3px solid #fff; border-radius: 50%" /></a>
           </div>
         </div>
@@ -737,8 +784,10 @@
       <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
         <div class="card bag-card h-100" style="border: none; border-radius: 20px">
           <!-- صور الشنطة -->
-          <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750287166/image-56_h7g444.png" class="bag-image default-img" alt="شنطة" />
-          <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750287172/image-56-hover_lmyhda.png" class="bag-image hover-img" alt="صورة جانبية" />
+          <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750287166/image-56_h7g444.png"
+            class="bag-image default-img" alt="شنطة" />
+          <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750287172/image-56-hover_lmyhda.png"
+            class="bag-image hover-img" alt="صورة جانبية" />
 
           <!-- معلومات الشنطة -->
           <div class="bag-info">
@@ -750,15 +799,18 @@
 
           <!-- ايقونات التواصل -->
           <div class="social-icons">
-            <a href="https://wa.me/+966550903636" target="_blank"><img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286082/whatsapp_edzyj9.png" alt="WhatsApp"
+            <a href="https://wa.me/+966550903636" target="_blank"><img
+                src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286082/whatsapp_edzyj9.png" alt="WhatsApp"
                 style="border: 3px solid #fff; border-radius: 50%" /></a>
-            <a href="https://www.facebook.com/share/1AvuzJ8U7W/" target="_blank"><img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286046/facebook_zzdkby.png"
-                alt="Facebook" style="border: 3px solid #fff; border-radius: 50%" /></a>
+            <a href="https://www.facebook.com/share/1AvuzJ8U7W/" target="_blank"><img
+                src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286046/facebook_zzdkby.png" alt="Facebook"
+                style="border: 3px solid #fff; border-radius: 50%" /></a>
             <a href="https://www.instagram.com/american_luggage_ksa?igsh=MzRlODBiNWFlZA==" target="_blank"><img
                 src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286053/instagram_ie5fdu.png" alt="Instagram"
                 style="border: 3px solid #fff; border-radius: 50%" /></a>
             <a href="https://www.tiktok.com/@american_luggage_ksa?_t=ZS-8x9FjCltjaa&_r=1" target="_blank"><img
-                src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286080/tiktok_fgqb2h.png" alt="TikTok" style="border: 3px solid #fff; border-radius: 50%" /></a>
+                src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286080/tiktok_fgqb2h.png" alt="TikTok"
+                style="border: 3px solid #fff; border-radius: 50%" /></a>
             <a href="https://x.com/americanluggag2?t=8Se5D8Ap-7DX_hIxGdCDjg&s=09" target="_blank"><img
                 src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286082/x-twitter_lc0ur1.png" alt="X" style="
                     border: 3px solid #fff;
@@ -766,7 +818,8 @@
                     background-color: #fff;
                   " /></a>
             <a href="https://www.snapchat.com/add/americanluggag2?share_id=dg3X_Y2jRkQ&locale=ar-EG"
-              target="_blank"><img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286075/snapchat_j5jrap.png" alt="Snapchat"
+              target="_blank"><img
+                src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286075/snapchat_j5jrap.png" alt="Snapchat"
                 style="border: 3px solid #fff; border-radius: 50%" /></a>
           </div>
         </div>
@@ -774,8 +827,10 @@
       <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3">
         <div class="card bag-card h-100" style="border: none; border-radius: 20px">
           <!-- صور الشنطة -->
-          <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750287174/image-57_uxnnfs.png" class="bag-image default-img" alt="شنطة" />
-          <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750287183/image-57-hover_rqrfpz.png" class="bag-image hover-img" alt="صورة جانبية" />
+          <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750287174/image-57_uxnnfs.png"
+            class="bag-image default-img" alt="شنطة" />
+          <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750287183/image-57-hover_rqrfpz.png"
+            class="bag-image hover-img" alt="صورة جانبية" />
 
           <!-- معلومات الشنطة -->
           <div class="bag-info">
@@ -787,15 +842,18 @@
 
           <!-- ايقونات التواصل -->
           <div class="social-icons">
-            <a href="https://wa.me/+966550903636" target="_blank"><img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286082/whatsapp_edzyj9.png" alt="WhatsApp"
+            <a href="https://wa.me/+966550903636" target="_blank"><img
+                src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286082/whatsapp_edzyj9.png" alt="WhatsApp"
                 style="border: 3px solid #fff; border-radius: 50%" /></a>
-            <a href="https://www.facebook.com/share/1AvuzJ8U7W/" target="_blank"><img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286046/facebook_zzdkby.png"
-                alt="Facebook" style="border: 3px solid #fff; border-radius: 50%" /></a>
+            <a href="https://www.facebook.com/share/1AvuzJ8U7W/" target="_blank"><img
+                src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286046/facebook_zzdkby.png" alt="Facebook"
+                style="border: 3px solid #fff; border-radius: 50%" /></a>
             <a href="https://www.instagram.com/american_luggage_ksa?igsh=MzRlODBiNWFlZA==" target="_blank"><img
                 src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286053/instagram_ie5fdu.png" alt="Instagram"
                 style="border: 3px solid #fff; border-radius: 50%" /></a>
             <a href="https://www.tiktok.com/@american_luggage_ksa?_t=ZS-8x9FjCltjaa&_r=1" target="_blank"><img
-                src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286080/tiktok_fgqb2h.png" alt="TikTok" style="border: 3px solid #fff; border-radius: 50%" /></a>
+                src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286080/tiktok_fgqb2h.png" alt="TikTok"
+                style="border: 3px solid #fff; border-radius: 50%" /></a>
             <a href="https://x.com/americanluggag2?t=8Se5D8Ap-7DX_hIxGdCDjg&s=09" target="_blank"><img
                 src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286082/x-twitter_lc0ur1.png" alt="X" style="
                     border: 3px solid #fff;
@@ -803,7 +861,8 @@
                     background-color: #fff;
                   " /></a>
             <a href="https://www.snapchat.com/add/americanluggag2?share_id=dg3X_Y2jRkQ&locale=ar-EG"
-              target="_blank"><img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286075/snapchat_j5jrap.png" alt="Snapchat"
+              target="_blank"><img
+                src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286075/snapchat_j5jrap.png" alt="Snapchat"
                 style="border: 3px solid #fff; border-radius: 50%" /></a>
           </div>
         </div>
@@ -815,7 +874,9 @@
     <div class="w-100 pt-4">
       <div class="video-thumbnail position-relative w-100" id="videoTrigger" data-bs-toggle="modal"
         data-bs-target="#videoModal2">
-        <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286060/main_m6nwzy.png" alt="صورة الفيديو" class="w-100 rounded" height="500px" />
+        <img
+          src="https://res.cloudinary.com/dg6vyez60/image/upload/v1751287769/a0af3b931b725c793d85e31249349e7ac75babc2_maqhsw.png"
+          alt="صورة الفيديو" class="w-100 rounded" height="500px" />
 
         <!-- الطبقة الداكنة -->
         <div class="overlay"></div>
@@ -836,10 +897,11 @@
       <div class="row mt-5 justify-content-between" style="flex-direction: row;">
         <div class="col-md-8 content" style="order: 1;">
           <h2 class="mb-4 header-1">توسّعنا لخدمتك، نحن متواجدون الآن في</h2>
-          <p class="mb-4" style="font-size: 27px">
-            الكويت – السعودية – الإمارات – مصر وقريبًا في بقية دول الخليج
-            العربي.<br />تتمتع الشركة بقاعدة عملاء واسعة يرغبون دائمًا في
-            اقتناء هذه الشنط العصرية والمتميزة.
+          <p class="mb-4" style="font-size: 27px">بدأت رحلتنا من الرياض، عاصمة المملكة العربية السعودية. <br>
+            واليوم، نواصل التوسع لنخدمك في:
+الكويت – الإمارات – مصر 
+وقريبًا في بقية دول الخليج العربي. 
+تتمتع الشركة بقاعدة عملاء واسعة يرغبون دائمًا في اقتناء هذه الشنط العصرية والمتميزة.
           </p>
           <div class="mt-5 order-now">
             <a href="https://wa.me/+966550903636" class="btn btn-lg px-4">أطلب الآن</a>
@@ -847,7 +909,8 @@
         </div>
         <div class="col-md-4 pt-4" style="order: 2;">
           <div class="video-thumbnail position-relative" id="videoTrigger">
-            <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286056/map_dlvt1t.png" alt="صورة الفيديو" class="w-100 rounded" />
+            <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286056/map_dlvt1t.png" alt="صورة الفيديو"
+              class="w-100 rounded" />
           </div>
         </div>
       </div>
@@ -856,19 +919,29 @@
   <!-- ddddddddddddddddddddddd -->
   <div class="pt-5 pb-4 image-real" style="background-color: #F2F2F2;">
     <div class="container">
-      <h2 class="fw-bold mb-5  text-center" style="color: #243B67; font-size: 40px; text-shadow: 0 0 1px #ffe520;">صور الواقع</h2>  
+      <h2 class="fw-bold mb-5  text-center" style="color: #243B67; font-size: 40px; text-shadow: 0 0 1px #ffe520;">صور
+        الواقع</h2>
       <div id="image-slider" class="splide" dir="rtl">
         <div class="splide__track">
           <ul class="splide__list">
-            <li class="splide__slide"><img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750287188/real-1_vt8csk.png" /></li>
-            <li class="splide__slide"><img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750287196/real-2_fjrja8.png" /></li>
-            <li class="splide__slide"><img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750287202/real-3_rhkzdq.png" /></li>
-            <li class="splide__slide"><img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750287203/real-4_fufbzk.png" /></li>
-            <li class="splide__slide"><img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750287205/real-5_zi1mvr.png" /></li>
-            <li class="splide__slide"><img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750287224/real-6_nvh6iz.png" /></li>
-            <li class="splide__slide"><img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750287259/real-7_zfxeed.png" /></li>
-            <li class="splide__slide"><img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750287263/real-8_vyprbg.png" /></li>
-            <li class="splide__slide"><img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750287263/real-9_z8mxjj.png" /></li>
+            <li class="splide__slide"><img
+                src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750287188/real-1_vt8csk.png" /></li>
+            <li class="splide__slide"><img
+                src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750287196/real-2_fjrja8.png" /></li>
+            <li class="splide__slide"><img
+                src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750287202/real-3_rhkzdq.png" /></li>
+            <li class="splide__slide"><img
+                src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750287203/real-4_fufbzk.png" /></li>
+            <li class="splide__slide"><img
+                src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750287205/real-5_zi1mvr.png" /></li>
+            <li class="splide__slide"><img
+                src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750287224/real-6_nvh6iz.png" /></li>
+            <li class="splide__slide"><img
+                src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750287259/real-7_zfxeed.png" /></li>
+            <li class="splide__slide"><img
+                src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750287263/real-8_vyprbg.png" /></li>
+            <li class="splide__slide"><img
+                src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750287263/real-9_z8mxjj.png" /></li>
 
           </ul>
         </div>
@@ -884,12 +957,12 @@
         ">
       تواصل معنا
     </h2>
-    <p class="mb-4" style="font-size: 27px; color: #404040">تتمتع شركة أميركان لاكج بآراء إيجابية من عملائها الذين يعبّرون عن رضاهم التام بجودة الشنط وتصاميمها العصرية. كن جزءاً من تجربتنا، وشاركنا رأيك لتكون أحد عملائنا المميزين
+    <p class="mb-4" style="font-size: 27px; color: #404040" dir="ltr">To learn about our most comprehensive collection
+      of designs and features, Don't forget to contact us and follow our pages on social media platforms.
     </p>
     <a href="https://wa.me/+966550903636" target="_blank" class="btn btn-primary px-4 py-2 fs-5"
-      style="background-color: #233c74; border: none">
-      سجّل الآن عبر واتساب
-    </a>
+      style="background-color: #233c74; border: none" dir="ltr">
+      Contact us with WhatsApp </a>
   </div>
 
   <!-- Modal لعرض الفيديو -->
@@ -899,7 +972,8 @@
         <div class="modal-body p-0">
           <div class="ratio ratio-16x9">
             <video id="popupVideo" controls autoplay>
-              <source src="https://res.cloudinary.com/dg6vyez60/video/upload/v1750284453/y9efoklzhodgxala7jxh.mp4" type="video/mp4" />
+              <source src="https://res.cloudinary.com/dg6vyez60/video/upload/v1750284453/y9efoklzhodgxala7jxh.mp4"
+                type="video/mp4" />
               المتصفح لا يدعم تشغيل الفيديو.
             </video>
           </div>
@@ -913,7 +987,8 @@
         <div class="modal-body p-0">
           <div class="ratio ratio-16x9">
             <video id="popupVideo2" controls autoplay>
-              <source src="https://res.cloudinary.com/dg6vyez60/video/upload/v1750284736/twdrhcptx4tgohnqntwp.mp4" type="video/mp4" />
+              <source src="https://res.cloudinary.com/dg6vyez60/video/upload/v1750284736/twdrhcptx4tgohnqntwp.mp4"
+                type="video/mp4" />
               المتصفح لا يدعم تشغيل الفيديو.
             </video>
           </div>
@@ -927,7 +1002,8 @@
         <div class="modal-body p-0">
           <div class="ratio ratio-16x9">
             <video id="popupVideo3" controls autoplay>
-              <source src="https://res.cloudinary.com/dg6vyez60/video/upload/v1750284757/ch2ayi9gxezvhbwxefpa.mp4" type="video/mp4" />
+              <source src="https://res.cloudinary.com/dg6vyez60/video/upload/v1750284757/ch2ayi9gxezvhbwxefpa.mp4"
+                type="video/mp4" />
               المتصفح لا يدعم تشغيل الفيديو.
             </video>
           </div>
@@ -940,7 +1016,7 @@
     <h2 class="fw-bold mb-4 text-center" style="font-size: 2.2rem; text-shadow: 0 0 1px #ffe520; color: #243b67;">
       آراء عملائنا
     </h2>
-  
+
     <div id="testimonialSlider" class="splide" dir="rtl">
       <div class="splide__track">
         <ul class="splide__list">
@@ -953,13 +1029,23 @@
               <p class="fs-5 mb-0">خدمة ممتازة جدًا الشنطة جودتها عالية وأنصح الجميع بالتجربة!</p>
             </div>
           </li>
-  
+
           <li class="splide__slide">
             <div class="testimonial-card p-4 text-center shadow-sm rounded-4 bg-white">
-              <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286046/Ellipse-23_rb0emx.png" class="rounded-circle mb-3"
+              <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286046/Ellipse-23_rb0emx.png"
+                class="rounded-circle mb-3"
                 style="width: 70px; height: 70px; object-fit: cover; border: 3px solid #e1de12;" />
               <h5 class="fw-bold mb-2" style="color: #243b67">سارة محمد</h5>
               <p class="fs-5 mb-0">بجد شنط رائعة وخدمة العملاء محترمة جدًا. أكيد هكرر الشراء مرة تانية.</p>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="testimonial-card p-4 text-center shadow-sm rounded-4 bg-white">
+              <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1751290578/360_F_213793387_Jy9VGwWWJD2Meogv70pj0gDe3hUWLpuU_ydqo6f.jpg" class="rounded-circle mb-3"
+                style="width: 70px; height: 70px; object-fit: cover; border: 3px solid #e1de12;" />
+              <h5 class="fw-bold mb-2" style="color: #243b67">Mohamed Ahmed</h5>
+              <p class="fs-5 mb-0" style="direction: ltr;">Excellent service and fast delivery. A great experience and I
+                recommend everyone.</p>
             </div>
           </li>
           <li class="splide__slide">
@@ -980,25 +1066,19 @@
           </li>
           <li class="splide__slide">
             <div class="testimonial-card p-4 text-center shadow-sm rounded-4 bg-white">
-              <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286046/Ellipse-22_ggfuln.png" class="rounded-circle mb-3"
+              <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286046/Ellipse-22_ggfuln.png"
+                class="rounded-circle mb-3"
                 style="width: 70px; height: 70px; object-fit: cover; border: 3px solid #e1de12;" />
               <h5 class="fw-bold mb-2" style="color: #243b67">خالد مصطفى</h5>
               <p class="fs-5 mb-0">الشنطة عملية جدًا وشكلها شيك. أنصح أي حد محتاج شنطة يعتمد عليكم.</p>
             </div>
           </li>
+          
           <li class="splide__slide">
             <div class="testimonial-card p-4 text-center shadow-sm rounded-4 bg-white">
-              <img src="https://randomuser.me/api/portraits/women/12.jpg" class="rounded-circle mb-3"
+              <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1751290695/istockphoto-1089633230-612x612_eajqib.jpg" class="rounded-circle mb-3"
                 style="width: 70px; height: 70px; object-fit: cover; border: 3px solid #e1de12;" />
-              <h5 class="fw-bold mb-2" style="color: #243b67">Salma Al-Qahtani</h5>
-              <p class="fs-5 mb-0" style="direction: ltr;">Excellent service and fast delivery. A great experience and I recommend everyone.</p>
-            </div>
-          </li>
-          <li class="splide__slide">
-            <div class="testimonial-card p-4 text-center shadow-sm rounded-4 bg-white">
-              <img src="https://randomuser.me/api/portraits/women/12.jpg" class="rounded-circle mb-3"
-                style="width: 70px; height: 70px; object-fit: cover; border: 3px solid #e1de12;" />
-              <h5 class="fw-bold mb-2" style="color: #243b67">منى عبد الله</h5>
+              <h5 class="fw-bold mb-2" style="color: #243b67">سلوى علي</h5>
               <p class="fs-5 mb-0">تعامل راقي وسرعة في الرد والتوصيل. تجربة ممتازة وأنصح الجميع.</p>
             </div>
           </li>
@@ -1007,7 +1087,7 @@
       </div>
     </div>
   </div>
-  
+
   <!-- الفوتر الاحترافي -->
   <footer class="bg-dark text-white pt-5 pb-3" id="contactUs">
     <div class="container">
@@ -1015,7 +1095,8 @@
         <!-- اللوجو أقصى اليمين -->
         <div
           class="col-md-3 text-center text-md-end mb-4 mb-md-0 d-flex flex-column align-items-center align-items-md-end">
-          <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286047/favicon.ico_lej2ey.png" alt="American Luggage Logo" class="img-fluid mb-3"
+          <img src="https://res.cloudinary.com/dg6vyez60/image/upload/v1750286047/favicon.ico_lej2ey.png"
+            alt="American Luggage Logo" class="img-fluid mb-3"
             style="max-width: 130px; background: #fff; border-radius: 12px; box-shadow: 0 2px 8px rgba(36,59,103,0.10); padding: 8px;">
         </div>
         <!-- أحصل على مساعدة -->
@@ -1034,39 +1115,76 @@
           <h5 class="fw-bold mb-3 text-center" style="color: #fff;">معلومات التواصل</h5>
           <ul class="list-unstyled footer-links" style="padding-right:0;">
             <li class="mb-2 d-flex align-items-center justify-content-center">
-              <a href="tel:+966550903636" style="direction:ltr; text-decoration: none; font-weight: 600; display: flex; align-items: center;">
+              <a href="tel:+966550903636"
+                style="direction:ltr; text-decoration: none; font-weight: 600; display: flex; align-items: center;">
                 <i class="fas fa-phone-alt ms-2 me-2" style="font-size: 1.1em;"></i>
                 +966550903636
               </a>
             </li>
             <li class="mb-2 d-flex align-items-center justify-content-center">
-              <a href="https://wa.me/+966509229344" style="direction:ltr; text-decoration: none; font-weight: 600; display: flex; align-items: center;">
+              <a href="https://wa.me/+966509229344"
+                style="direction:ltr; text-decoration: none; font-weight: 600; display: flex; align-items: center;">
                 <i class="fab fa-whatsapp ms-2 me-2" style="font-size: 1.1em;"></i>
                 +966509229344
               </a>
             </li>
+           <li class="mb-2 d-flex align-items-center justify-content-center">
+                <a href="tel:+966550903636"
+                  style="direction:ltr; text-decoration: none; font-weight: 600; display: flex; align-items: center;">
+                  <i class="fas fa-file-invoice-dollar ms-2 me-2" style="font-size: 1.1em;"></i>
+                   الرقم الضريبي: 311160201700003
+                </a>
+              </li>
+              <li class="mb-2 d-flex align-items-center justify-content-center">
+                <a href="https://wa.me/+966509229344"
+                  style="direction:ltr; text-decoration: none; font-weight: 600; display: flex; align-items: center;">
+                  <i class="fas fa-briefcase ms-2 me-2" style="font-size: 1.1em;"></i>
+                  سجل الأنشطة: 1009000417
+                </a>
+              </li>
           </ul>
         </div>
         <!-- تابعونا أقصى الشمال -->
         <div class="col-md-3 mb-4 mb-md-0 text-center text-md-start">
           <h5 class="fw-bold mb-3 text-center">تابعونا</h5>
           <div class="d-flex justify-content-center justify-content-md-center gap-3 fs-4">
-            <a href="https://www.facebook.com/share/1AvuzJ8U7W/" class="footer-icon"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.tiktok.com/@american_luggage_ksa?_t=ZS-8x9FjCltjaa&_r=1" class="footer-icon"><i class="fab fa-tiktok"></i></a>
-            <a href="https://www.instagram.com/american_luggage_ksa?igsh=MzRlODBiNWFlZA==" class="footer-icon"><i class="fab fa-instagram"></i></a>
-            <a href="https://x.com/AmericanLuggage?t=1718860800&s=09" class="footer-icon"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/share/1AvuzJ8U7W/" class="footer-icon"><i
+                class="fab fa-facebook-f"></i></a>
+            <a href="https://www.tiktok.com/@american_luggage_ksa?_t=ZS-8x9FjCltjaa&_r=1" class="footer-icon"><i
+                class="fab fa-tiktok"></i></a>
+            <a href="https://www.instagram.com/american_luggage_ksa?igsh=MzRlODBiNWFlZA==" class="footer-icon"><i
+                class="fab fa-instagram"></i></a>
+            <a href="https://x.com/AmericanLuggage?t=1718860800&s=09" class="footer-icon"><i
+                class="fab fa-twitter"></i></a>
           </div>
+          <!-- <ul class="list-unstyled footer-links">
+            <li class="mb-2 d-flex align-items-center justify-content-center">
+                <a href="tel:+966550903636"
+                  style="direction:ltr; text-decoration: none; font-weight: 600; display: flex; align-items: center;">
+                  <i class="fas fa-file-invoice-dollar ms-2 me-2" style="font-size: 1.1em;"></i>
+                   الرقم الضريبي: 311160201700003
+                </a>
+              </li>
+              <li class="mb-2 d-flex align-items-center justify-content-center">
+                <a href="https://wa.me/+966509229344"
+                  style="direction:ltr; text-decoration: none; font-weight: 600; display: flex; align-items: center;">
+                  <i class="fas fa-briefcase ms-2 me-2" style="font-size: 1.1em;"></i>
+                  سجل الأنشطة: 1009000417
+                </a>
+              </li>
+          </ul> -->
+
         </div>
       </div>
     </div>
-      <hr class="bg-light mt-4">
-      <!-- Footer bottom -->
-      <div class="container">
+    <hr class="bg-light mt-4">
+    <!-- Footer bottom -->
+    <div class="container">
       <div class="text-center mt-3 small copyright-footer"
         style="color: #bdbdbd; font-size: 0.95rem; letter-spacing: 0.5px;">
         جميع الحقوق محفوظة &copy; 2025 American Luggage
       </div>
-      </div>
+    </div>
     </div>
   </footer>
   <!-- نهاية الفوتر -->
@@ -1107,52 +1225,63 @@
       },
     }).mount();
   </script>
-    <script src="assets/js/script.js"></script>
-    
-    <script>
-        // Function to handle responsive layout for sections with text and image
-        function handleResponsiveLayout() {
-            const sections = document.querySelectorAll('.part-1, .part-2');
-            
-            sections.forEach(section => {
-                const row = section.querySelector('.row');
-                const firstCol = row.querySelector('div:first-child');
-                const lastCol = row.querySelector('div:last-child');
-                
-                if (window.innerWidth <= 767.98) {
-                    // Mobile layout: image first, text second
-                    row.style.flexDirection = 'column-reverse';
-                    firstCol.style.order = '2';
-                    lastCol.style.order = '1';
-                    lastCol.style.marginBottom = '2rem';
-                    
-                    // Center text content
-                    const content = section.querySelector('.content');
-                    if (content) {
-                        content.style.textAlign = 'center';
-                    }
-                } else {
-                    // Desktop layout: text first, image second
-                    row.style.flexDirection = 'row';
-                    firstCol.style.order = '1';
-                    lastCol.style.order = '2';
-                    lastCol.style.marginBottom = '0';
-                    
-                    // Reset text alignment
-                    const content = section.querySelector('.content');
-                    if (content) {
-                        content.style.textAlign = '';
-                    }
-                }
-            });
+  <script src="assets/js/script.js"></script>
+
+  <script>
+    // Function to handle responsive layout for sections with text and image
+    function handleResponsiveLayout() {
+      const sections = document.querySelectorAll('.part-1, .part-2');
+
+      sections.forEach(section => {
+        const row = section.querySelector('.row');
+        const firstCol = row.querySelector('div:first-child');
+        const lastCol = row.querySelector('div:last-child');
+
+        if (window.innerWidth <= 767.98) {
+          // Mobile layout: image first, text second
+          row.style.flexDirection = 'column-reverse';
+          firstCol.style.order = '2';
+          lastCol.style.order = '1';
+          lastCol.style.marginBottom = '2rem';
+
+          // Center text content
+          const content = section.querySelector('.content');
+          if (content) {
+            content.style.textAlign = 'center';
+          }
+        } else {
+          // Desktop layout: text first, image second
+          row.style.flexDirection = 'row';
+          firstCol.style.order = '1';
+          lastCol.style.order = '2';
+          lastCol.style.marginBottom = '0';
+
+          // Reset text alignment
+          const content = section.querySelector('.content');
+          if (content) {
+            content.style.textAlign = '';
+          }
         }
-        
-        // Run on page load
-        document.addEventListener('DOMContentLoaded', handleResponsiveLayout);
-        
-        // Run on window resize
-        window.addEventListener('resize', handleResponsiveLayout);
-    </script>
+      });
+    }
+
+    // Run on page load
+    document.addEventListener('DOMContentLoaded', handleResponsiveLayout);
+
+    // Run on window resize
+    window.addEventListener('resize', handleResponsiveLayout);
+  </script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var heroSlider = document.querySelector('#heroAutoplaySlider');
+    var carousel = new bootstrap.Carousel(heroSlider, {
+      interval: 3000,
+      ride: 'carousel',
+      pause: false,
+      wrap: true
+    });
+  });
+</script>
 </body>
 
 </html>
