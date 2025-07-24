@@ -48,3 +48,21 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+// send to WhatsApp Button Functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const sendWhatsAppBtn = document.getElementById('sendWhatsApp');
+  const phoneNumber = '+966509229344'; // Replace with your phone number
+  // Show/hide button based on scroll position
+  window.addEventListener('scroll', function() {
+    if (window.pageYOffset > 300) {
+      sendWhatsAppBtn.classList.add('show');
+    } else {
+      sendWhatsAppBtn.classList.remove('show');
+    }
+  });
+  
+  // Smooth scroll to top when button is clicked
+  sendWhatsAppBtn.addEventListener('click', function() {
+    window.open(`https://wa.me/${phoneNumber}`, '_blank');
+  });
+});
